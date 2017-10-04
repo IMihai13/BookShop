@@ -1,0 +1,20 @@
+Librarie Online
+
+Cerinte:
+	* Autentificare (cumparator/administrator)
+	* Vizualizare librarie (logat sau nelogat)
+	* Vizualizare detaliata a produsului
+	* Rating-ul produsului
+	* Modificare librarie/stoc( drept de administrator)
+	* Adaugare produs in cos
+	* Calcularea sumei cosului
+	* Plasare comanda( necesita autentificare)
+	* Cautare/Sortare dupa categorie
+	 
+	 
+	 
+Specificatii:
+	* Wampserver
+	* Spring
+	* phpMyAdmin
+	* Limbaj de programare: java
