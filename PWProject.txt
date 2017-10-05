@@ -17,4 +17,5 @@ Specificatii:
 	* Wampserver
 	* Spring
 	* phpMyAdmin
+	* Angular2
 	* Limbaj de programare: java
