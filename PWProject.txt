@@ -2,7 +2,7 @@ Librarie Online
 
 Cerinte:
 	* Autentificare (cumparator/administrator)
-	* Vizualizare librarie (logat sau nelogat)
+	* Vizualizare librarie (logat )
 	* Vizualizare detaliata a produsului
 	* Rating-ul produsului
 	* Modificare librarie/stoc( drept de administrator)
@@ -14,8 +14,7 @@ Cerinte:
 	 
 	 
 Specificatii:
-	* Wampserver
-	* Spring
-	* phpMyAdmin
+	* Xampp
+	* MySql
 	* Angular2
-	* Limbaj de programare: java
+	* typescript
