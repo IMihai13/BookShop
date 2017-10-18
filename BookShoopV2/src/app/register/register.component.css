@@ -1,0 +1,51 @@
+form{
+	
+    font-size: 20px;
+    font-weight: 200;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+  /*  box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;*/
+    font-family:Times New Roman;
+    margin-top: 50px;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+body{
+
+	background-image: url("915572.jpg");
+    background-repeat: no-repeat;
+    font-family:Times New Roman;
+    font-size: 20px;
+
+}
+legend{
+	 font-family:Times New Roman;
+	 font-size:20px;
+	}
+div{
+	 font-family:Times New Roman;
+	 font-size: 20px;
+}
+h2{
+	text-align: center;
+	font-family: Times New Roman;
+	margin-top: 20px;
+	font-size: 30px;
+
+}
+label{
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 20px;
+
+}
+input{
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 20px;
+
+}

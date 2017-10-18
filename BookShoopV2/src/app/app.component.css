@@ -1,35 +1,7 @@
-h5{
-	font-size: 50px;
-	font-style: italic;
-	font-family: "Times New Roman", Times, serif;
-	color: #C34768;
-
-}
-
-h1{
+#navbar-main{
+	padding-right: 100px;
+	font-color: white;
 	font-size: 20px;
-	font-family: "Times New Roman", Times, serif;
-	background-color: #C34768;
-	color: white;
-}
-div{
-	font-family: "Times New Roman", Times, serif;
+	font-family:Times New Roman;	
 }
 
-.button{
-	background-color: #C34768; 
-    border: none;
-    border-radius: 8px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-}
-
-#bkimg{
-	background-image: url("book.jpg");
-	background-repeat: repeat ;
-	background-attachment: fixed;
-	background-image: src="bg.jpg";
-}
