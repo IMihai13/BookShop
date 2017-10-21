@@ -1,15 +1,14 @@
 Librarie Online
 
 Cerinte:
-	* Autentificare (cumparator/administrator)
+	* Autentificare
 	* Vizualizare librarie (logat )
 	* Vizualizare detaliata a produsului
 	* Rating-ul produsului
-	* Modificare librarie/stoc( drept de administrator)
 	* Adaugare produs in cos
 	* Calcularea sumei cosului
 	* Plasare comanda( necesita autentificare)
-	* Cautare/Sortare dupa categorie
+	* Afisare dupa categorie 
 	 
 	 
 	 
