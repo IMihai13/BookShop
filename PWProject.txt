@@ -3,7 +3,6 @@ Librarie Online
 Cerinte:
 	* Autentificare
 	* Vizualizare librarie (logat )
-	* Vizualizare detaliata a produsului
 	* Rating-ul produsului
 	* Adaugare produs in cos
 	* Calcularea sumei cosului
