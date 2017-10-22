@@ -11,13 +11,22 @@ import { HomeComponent } from '../home/home.component';
 export class LoginComponent implements OnInit {
 
    
-    constructor(private router : Router){}
+
+    constructor(private router : Router){
+
+    }
+
     ngOnInit() {
     }
 
-    Move(){
+    MoveHome(){
         console.log(1);
         this.router.navigate(['/home']);
+    }
+
+    MoveRegister(){
+        console.log(1);
+        this.router.navigate(['/register']);
     }
 }
 

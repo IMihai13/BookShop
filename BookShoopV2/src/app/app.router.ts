@@ -14,12 +14,21 @@ import { RegisterComponent } from './register/register.component';
 export const router: Routes = [
 	
 	{path:'home',component:HomeComponent},
+
 	{path:'about',component:AboutComponent},
+	
 	{path:'cart',component:CartComponent},
-	{path:'login',component:HomeComponent},
-	{path:'logout',component:LogoutComponent},
+	
+	{path:'login',component:LoginComponent},
+	
+	{path:'logout',component:LoginComponent},
+	
 	{path:'categor',component:CategorComponent},
+	
 	{path:'register',component:RegisterComponent},
+	
+	{path:'**',component:LoginComponent},
+
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
