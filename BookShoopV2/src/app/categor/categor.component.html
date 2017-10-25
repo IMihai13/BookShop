@@ -8,16 +8,174 @@
    <div class="nav navbar-right" id="navbar-main">
     <ul class="nav navbar-nav navbar-right">
       <li><a routerLink="/home" routerLinkActive="active">Home</a></li>  
-      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
       <li><a routerLink="/categor" routerLinkActive="active">Category</a></li>
       <li><a routerLink="/cart" routerLinkActive="active">Cart</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
       <li><a routerLink="/login" routerLinkActive="active">LogOut</a></li>
     </ul>
 </div>
 </nav>
 
 
+<table>
+  <tr>
+    <th>Adventure</th>
+    <th>History</th>
+    <th>Mistery</th>
+  </tr>
+  <tr>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="Adv[0]">
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+  </td>
+    <td>
+      <div class="col-lg-3 col-md-6 mb-4" [hidden]="His[0]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+    </td>
+    <td>
+      <div class="col-lg-3 col-md-6 mb-4" [hidden]="Mis[0]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+    </td>
+  </tr>
+  
+  <tr>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="Adv[1]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> </td>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="His[1]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> </td>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="Mis[1]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> </td>
+  </tr>
+ 
+  <tr>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="Adv[2]">
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> </td>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="His[2]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> </td>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="Mis[2]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> </td>
+  </tr>
+  
+  <tr>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="Adv[3]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+  </td>
+    <td>
+      <div class="col-lg-3 col-md-6 mb-4" [hidden]="His[3]">
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+    </td>
+    <td>
+      <div class="col-lg-3 col-md-6 mb-4" [hidden]="Mis[3]" >
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+    </td>
+  </tr>
+  
+  <tr>
+    <td><div class="col-lg-3 col-md-6 mb-4" [hidden]="Adv[4]">
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+  </td>
+    <td>
+      <div class="col-lg-3 col-md-6 mb-4" [hidden]="His[4]">
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+    </td>
+    <td>
+      <div class="col-lg-3 col-md-6 mb-4" [hidden]="Mis[4]">
+      <div class="card">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title.</p>
+            <a id ="ahome" href="#" class="btn btn-primary">  <span class="icon"> </span>
+        View</a> </div>
+      </div>
+    </div> 
+    </td>
+  </tr>
+  
+</table>
 
-<button id="b1">Left</button>
-<button id="b2">Middle</button>
-<button id="b3">Right</button>
+
+
+
+

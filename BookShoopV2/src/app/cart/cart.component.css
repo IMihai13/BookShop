@@ -6,41 +6,43 @@
 body{
 	
 	 background-image:url('bk.jpg');
+	 padding-bottom: 20%;
+	 overflow-y: hidden;
 }
 
-.collapse {
-    .panel-body {
-        -webkit-transition: all 0.1s ease;
-        -moz-transition: all 0.1s ease;
-        -ms-transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        transition: all 0.1s ease;
-        max-height: 0px;
-        overflow-y: hidden;
-        padding: 0px;
-        > div {
-            margin: 10px 15px 10px 15px;
-        }
-    }
-    &.exp {
-        .panel-body {
-            max-height: 3000px;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-            > div {
-                margin-bottom: 0xp;
-            }
-        }
-    }
+img.avatar {
+    width: 9%;
+    border-radius: 50%;
 }
 
-.arrow {
-    float: right;
-    position: absolute;
-    right: 25px;
-    margin-top: -15px;
-    cursor: pointer;
+.imgcontainer {
+    text-align: left;
+    margin: 24px 0 12px 0;
+}
+
+table {
+	font-family:Times New Roman;
+    width: 60%;
+    margin-top: -70px;
+
+}
+
+th {
+    text-align: center;
+    font-size:20px;
+    padding: 15px;
+
+}
+
+td{
+	text-align:center;
+	padding-left: 70px;
+	padding-top:20px;
+}
+
+
+
+th {
+    background-color: #FF6600;
+    color: white;
 }
