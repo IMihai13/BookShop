@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { FormGroup,FormControl,Validators } from '@angular/forms';
+
+
+
 
 import { HomeComponent } from '../home/home.component';
 
@@ -8,16 +12,32 @@ import { HomeComponent } from '../home/home.component';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
-   
+private login:FormGroup; 
+
 
     constructor(private router : Router){
 
     }
 
-    ngOnInit() {
-    }
+
+    ngOnInit(): void {
+        this.login = new FormGroup({
+        'name': new FormControl(name,[Validators.required]),
+        'psw': new FormControl(name,[Validators.required,Validators.maxLength(10)])
+  });
+}
+        
+
+    getName():string{    
+        return this.login.get('name').value; 
+        }
+
+    getPassword():string{ 
+        return this.login.get('psw').value;
+        }
 
     MoveHome(){
         console.log(1);
@@ -27,6 +47,15 @@ export class LoginComponent implements OnInit {
     MoveRegister(){
         console.log(1);
         this.router.navigate(['/register']);
+    }
+
+    CheckLogin(uname:string,psw:string){
+        console.log(uname);
+        console.log(psw);
+        if ((uname==="user")&&(psw==="password"))
+            this.MoveHome();
+        else
+            this.router.navigate(['/login']);
     }
 }
 

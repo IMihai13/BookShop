@@ -10,7 +10,7 @@
   <div class="form-group" style="margin-top: 50px;">
     <label class="col-md-4 control-label" for="name"> Last Name:</label>  
     <div class="col-md-4">
-    <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required="">
+    <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required maxlength="15" [(ngModel)]="name">
       
     </div>
   </div>
@@ -19,7 +19,7 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="fname">First Name:</label>  
     <div class="col-md-4">
-    <input id="fname" name="fname" type="text" placeholder="Enter your first name" class="form-control input-md" required="">
+    <input id="fname" name="fname" type="text" placeholder="Enter your first name" class="form-control input-md" required maxlength="35" [(ngModel)]="fname">
       
     </div>
   </div>
@@ -29,7 +29,7 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="email">Email:</label>  
     <div class="col-md-4">
-    <input id="email" name="email" type="text" placeholder="Enter your email id" class="form-control input-md" required="">
+    <input id="email" name="email" type="text" placeholder="Enter your email id" class="form-control input-md" required maxlength="35" [(ngModel)]="email">
       
     </div>
   </div>
@@ -38,7 +38,7 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="user">Username:</label>  
     <div class="col-md-4">
-    <input id="user" name="user" type="text" placeholder="Enter your Username" class="form-control input-md" required="">
+    <input id="user" name="user" type="text" placeholder="Enter your Username" class="form-control input-md" required maxlength="10" [(ngModel)]="user">
       
     </div>
   </div>
@@ -47,7 +47,7 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="password">Password:</label>
     <div class="col-md-4">
-      <input id="password" name="password" type="password" placeholder="Enter a password" class="form-control input-md" required="">
+      <input id="password" name="password" type="password" placeholder="Enter a password" class="form-control input-md" required maxlength="10" [(ngModel)]="password">
       
     </div>
   </div>
@@ -56,7 +56,7 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="contact">Contact no.:</label>  
     <div class="col-md-4">
-    <input id="contact" name="contact" type="text" placeholder="Enter your contact no." class="form-control input-md" required="">
+    <input id="contact" name="contact" type="text" placeholder="Enter your contact no." class="form-control input-md" required maxlength="10" [(ngModel)]="contact">
       
     </div>
   </div>
@@ -65,7 +65,7 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="adress">Adress:</label>  
     <div class="col-md-4">
-    <input id="adress" name="adress" type="text" placeholder="Enter your full adress" class="form-control input-md" required="">
+    <input id="adress" name="adress" type="text" placeholder="Enter your full adress" class="form-control input-md" required maxlength="35" [(ngModel)]="adress">
       
     </div>
   </div>
@@ -78,7 +78,7 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="signup"></label>
     <div class="col-md-4">
-     <button id="signup" name="signup" class="btn btn-success"   (click)= "MoveLogin()">Sign Up</button>
+     <button id="signup" name="signup" class="btn btn-success"   (click)= "SignUp(name,fname,email,user,password,contact,adress)">Sign Up</button>
      
     </div>
   </div>
