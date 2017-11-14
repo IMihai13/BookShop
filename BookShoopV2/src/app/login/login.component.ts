@@ -2,15 +2,16 @@ import { Component, OnInit, } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup,FormControl,Validators } from '@angular/forms';
 
-
-
+import 'rxjs/Rx';
+import {Observable} from 'rxjs/Rx';
 
 import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  
 })
 
 export class LoginComponent implements OnInit {
@@ -29,11 +30,14 @@ private loginC:LoginComponent;
         'name': new FormControl("",[Validators.required]),
         'psw': new FormControl("",[Validators.required,Validators.maxLength(10)])
   });
+ 
+  
 }
-        
+    
 
     getName():string{    
         return this.login.get('name').value; 
+
         }
 
     getPassword():string{ 

@@ -12,22 +12,28 @@ import { LogoutComponent } from './logout/logout.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { RegisterComponent } from './register/register.component';
+import { ViewerComponent } from './viewer/viewer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+   
     CategorComponent,
     AboutComponent,
+   
     LogoutComponent,
     LoginComponent,
     CartComponent,
-    RegisterComponent
+    RegisterComponent,
+    ViewerComponent
   ],
   imports: [
+ 
     BrowserModule,
     FormsModule,
+    
     routes,
     StarRatingModule.forRoot()
 

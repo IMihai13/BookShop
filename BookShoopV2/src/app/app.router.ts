@@ -9,7 +9,7 @@ import { CategorComponent } from './categor/categor.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { RegisterComponent } from './register/register.component';
-
+import { ViewerComponent } from './viewer/viewer.component';
 
 export const router: Routes = [
 	
@@ -26,6 +26,8 @@ export const router: Routes = [
 	{path:'categor',component:CategorComponent},
 	
 	{path:'register',component:RegisterComponent},
+
+	{path:'viewer',component:ViewerComponent},
 	
 	{path:'**',component:LoginComponent},
 
