@@ -55,8 +55,31 @@ private loginC:LoginComponent;
     }
 
     CheckLogin(uname:string,psw:string){
-        if(uname==="aaaa" && psw==="aaaaa")
+        if(uname==="user" && psw==="password")
             this.MoveHome();
+        /*
+        this.loginC.doLogin(uname,psw).then(
+            result=>{
+                console.log(result);
+            }
+        );
+        */
+    }
+
+    doLogin(username,password){
+    /*
+    let body:string="key=create&user="+username+"pass="+password,
+        type:string="application/x-www-form-urlencoded; chart=UTF-8",
+        headers:any=new Headers({'Contet-Type': type }),
+        options:any=new RequestOptions({headers:headers}),
+        url:'http://localhost/BookShoopV2/php_script/getUserLogin.php';
+
+    return new Promise(resolve=>{
+    this.http.post(url,body,options).subscribe((data)=>{
+            resolve(data.json());
+        });
+    });
+    */
     }
 
 
