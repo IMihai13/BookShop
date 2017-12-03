@@ -14,26 +14,28 @@ import { CartComponent } from './cart/cart.component';
 import { RegisterComponent } from './register/register.component';
 import { ViewerComponent } from './viewer/viewer.component';
 
+import { HttpClientModule}from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
    
+    HomeComponent,
     CategorComponent,
     AboutComponent,
-   
     LogoutComponent,
     LoginComponent,
     CartComponent,
     RegisterComponent,
-    ViewerComponent
+    ViewerComponent,
+   
+
   ],
   imports: [
  
     BrowserModule,
     FormsModule,
-    
+    HttpClientModule,
     routes,
     StarRatingModule.forRoot()
 

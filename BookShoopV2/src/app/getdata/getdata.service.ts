@@ -5,12 +5,15 @@ import 'rxjs/Rx';
 import {Observable} from 'rxjs/Rx'
 
 @Injectable()
-export class GetdataService {
+export class GetdataService  {
 
- constructor(public http: Http) { }
+ constructor() {  
+ //instantiem http
+ //implemtnt la cls }
 
-  gedummy(): Observable<any> {
-   return this.http.get("http://localhost/php_script/getBooksCategory.php").map((res: Response) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-  }
+ // gedummy(): Observable<any> {
+   //return this.http.get("http://localhost/php_script/getBooksCategory.php").map((res: Response) => res.json())
+     //       .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+  //}
+}
 }
