@@ -1,9 +1,9 @@
 import { Component, OnInit, } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup,FormControl,Validators } from '@angular/forms';
-
-import 'rxjs/Rx';
-import {Observable} from 'rxjs/Rx';
+import { ApiProviderService } from '../api-provider.service';
+import { Http, Response } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { HomeComponent } from '../home/home.component';
 
@@ -11,7 +11,7 @@ import { HomeComponent } from '../home/home.component';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  
+  providers: [ApiProviderService],
 })
 
 export class LoginComponent implements OnInit {
@@ -19,9 +19,9 @@ export class LoginComponent implements OnInit {
 private login:FormGroup; 
 private loginC:LoginComponent;
 
-    constructor(private router : Router){
- 
-
+    constructor(private router : Router ,public api: ApiProviderService, public http: Http,){
+        
+         
     }
 
 
@@ -55,32 +55,18 @@ private loginC:LoginComponent;
     }
 
     CheckLogin(uname:string,psw:string){
-        if(uname==="user" && psw==="password")
+        /*if(uname==="user" && psw==="password")
             this.MoveHome();
-        /*
-        this.loginC.doLogin(uname,psw).then(
+        
+        */
+        this.api.doLogin(uname,psw).then(
             result=>{
                 console.log(result);
             }
         );
-        */
     }
 
-    doLogin(username,password){
-    /*
-    let body:string="key=create&user="+username+"pass="+password,
-        type:string="application/x-www-form-urlencoded; chart=UTF-8",
-        headers:any=new Headers({'Contet-Type': type }),
-        options:any=new RequestOptions({headers:headers}),
-        url:'http://localhost/BookShoopV2/php_script/getUserLogin.php';
-
-    return new Promise(resolve=>{
-    this.http.post(url,body,options).subscribe((data)=>{
-            resolve(data.json());
-        });
-    });
-    */
-    }
+    
 
 
 

@@ -4,6 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { routes} from './app.router';
 import { StarRatingModule } from 'angular-star-rating';
 
+import { HttpClient, HttpClientModule}from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { Http, Response } from '@angular/http';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CategorComponent } from './categor/categor.component';
@@ -13,13 +17,12 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { RegisterComponent } from './register/register.component';
 import { ViewerComponent } from './viewer/viewer.component';
+import { ApiProviderService } from './api-provider.service';
 
-import { HttpClientModule}from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-   
     HomeComponent,
     CategorComponent,
     AboutComponent,
@@ -28,19 +31,18 @@ import { HttpClientModule}from '@angular/common/http';
     CartComponent,
     RegisterComponent,
     ViewerComponent,
-   
-
   ],
   imports: [
  
     BrowserModule,
     FormsModule,
     HttpClientModule,
+	HttpModule,
     routes,
     StarRatingModule.forRoot()
 
   ],
-  providers: [],
+  providers: [ApiProviderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
