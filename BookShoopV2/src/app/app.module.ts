@@ -31,13 +31,13 @@ import { ApiProviderService } from './api-provider.service';
     CartComponent,
     RegisterComponent,
     ViewerComponent,
+    
   ],
   imports: [
- 
     BrowserModule,
     FormsModule,
     HttpClientModule,
-	HttpModule,
+	   HttpModule,
     routes,
     StarRatingModule.forRoot()
 

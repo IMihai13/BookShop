@@ -7,14 +7,14 @@
    
 <div class="container" style="margin-top: 150px">
     <label><b>Username</b></label>
-    <input class="form-control" [(ngModel)]="name" type="text" placeholder="Enter Username" name="name" required>
+    <input class="form-control" [(ngModel)]="name" type="text"  placeholder="Enter Username" name="name" required>
 
     <label><b>Password</b></label>
-    <input class="form-control" [(ngModel)]="psw" type="password" placeholder="Enter Password" name="password" required maxlength="10">
+    <input class="form-control" [(ngModel)]="psw" type="password" placeholder="Enter Password" name="psw" required maxlength="10">
     
     <div style="width:1100px; align-self: center;">
       <div style="float: left; width: 525px">
-        <button type="submit"  (click)= "CheckLogin(name,psw)" >Login</button>
+        <button type="submit"(click)="logForm(name,psw)" >Login</button>
       </div>
       <div style="float: right; width: 525px">
         <button type="submit"  (click)= "MoveRegister()">Register</button>

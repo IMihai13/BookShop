@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup,FormControl,Validators } from '@angular/forms';
+import { ApiProviderService } from '../api-provider.service';
+import { Http, Response } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { LoginComponent } from '../login/login.component';
 
@@ -13,7 +16,7 @@ export class RegisterComponent implements OnInit {
 
   private register:FormGroup;
   
-  constructor(private router : Router) { }
+  constructor(private router : Router,public api: ApiProviderService) { }
 
   ngOnInit() {
   this.register=new FormGroup({
@@ -33,7 +36,6 @@ export class RegisterComponent implements OnInit {
     }
 
     SignUp(name:string,fname:string,email:string,user:string,passward:string,contact:string,adress:string){
-
         console.log(name);
         console.log(fname);
         console.log(email);
@@ -41,6 +43,10 @@ export class RegisterComponent implements OnInit {
         console.log(passward);
         console.log(contact);
         console.log(adress);
+        this.api.register(user,passward,name,fname,contact,email,adress).then(
+            result=>{
+                console.log(result);
+            });
         this.MoveLogin();
     }
 

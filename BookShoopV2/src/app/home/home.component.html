@@ -22,74 +22,41 @@
     <!-- Page Features -->
   <div class="row text-center">
     <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card"> <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title .</p>
-            <a id ="ahome" href="#" class="btn btn-primary" > <span class="icon"></span>
+      <div class="card"> <img class="card-img-top"  style="height:250px; width:253px" src={{image1}} alt="">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">{{title1}}</h4>
+            <p class="card-text" style="font-size: 12px">{{details1}}</p>
+            <a id ="ahome"  class="btn btn-primary" (click)="addToCart(title1)"> <span class="icon"></span>
         Cart</a> </div>
      </div>
     </div>
 
     <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card">  <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title .</p>
-            <a id ="ahome" href="#" class="btn btn-primary"> <span class="icon">  </span>
+      <div class="card">  <img class="card-img-top" style="height:250px; width:253px" src={{image2}} alt="">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">{{title2}}</h4>
+            <p class="card-text" style="font-size: 12px">{{details2}}</p>
+            <a id ="ahome"  class="btn btn-primary" (click)="addToCart(title2)"> <span class="icon">  </span>
         Cart</a> </div>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card"> <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div id ="divhome" class="card-body"> <h4 class="card-title" >{{bookname3}}</h4>
-            <p class="card-text">Some quick example text to build on the card title.</p>
-            <a id ="ahome" href="#" class="btn btn-primary" onclick="addToCart(bookname3)">  <span class="icon"> </span>
+      <div class="card"> <img class="card-img-top" style="height:250px; width:253px" src={{image3}} alt="">
+            <div id ="divhome" class="card-body"> <h4 class="card-title" >{{title3}}</h4>
+            <p class="card-text" style="font-size: 12px">{{details3}}</p>
+            <a id ="ahome"  class="btn btn-primary" (click)="addToCart(title3)">  <span class="icon"> </span>
         Cart</a> </div>
       </div>
     </div>
 
    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card"> <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title .</p>
-            <a id ="ahome" href="#" class="btn btn-primary"> <span class="icon"> </span>
+      <div class="card"> <img class="card-img-top"  style="height:250px; width:253px" src={{image4}} alt="">
+            <div id ="divhome" class="card-body"> <h4 class="card-title">{{title4}}</h4>
+            <p class="card-text" style="font-size: 12px">{{details4}}</p>
+            <a id ="ahome"  class="btn btn-primary" (click)="addToCart(title4)"> <span class="icon"> </span>
         Cart</a></div>
       </div>
    </div>
 
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card"> <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title .</p>
-            <a id ="ahome" href="#" class="btn btn-primary"> <span class="icon"> </span>
-        Cart</a></div>
-      </div>
-   </div>
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card"> <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title .</p>
-            <a id ="ahome" href="#" class="btn btn-primary" > <span class="icon"> </span>
-        Cart</a></div>
-      </div>
-   </div>
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card"> <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div id ="divhome" class="card-body"> <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title .</p>
-            <a id ="ahome" href="#" class="btn btn-primary" > <span class="icon"> </span>
-        Cart</a></div>
-      </div>
-   </div>
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card"> <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div  id ="divhome" class="card-body" > <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title .</p>
-            <a  id ="ahome" href="#" class="btn btn-primary"> <span class="icon"></span>
-        Cart</a>
-        <!-- <star-rating-comp [starType]="'icon'" [rating]="3" [labelText]="'My text!'"></star-rating-comp> --></div>
-      </div>
-   </div>
 
   </div>
  <!-- /.row -->
@@ -102,6 +69,6 @@
 
 <!-- Footer-->
 <footer class="py-2 bg-dark">
-    <div class="container"> <p class="m-0 text-center text-white"> Website 2017</p> </div>
+    <div class="container"> <p class="m-0 text-center text-white"> Website 2017 </p> </div>
 </footer>
 </body>

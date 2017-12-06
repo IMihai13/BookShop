@@ -19,57 +19,36 @@ export class LoginComponent implements OnInit {
 private login:FormGroup; 
 private loginC:LoginComponent;
 
-    constructor(private router : Router ,public api: ApiProviderService, public http: Http,){
-        
-         
-    }
+constructor(private router : Router ,public api: ApiProviderService, public http: Http,){
+}
 
-
-    ngOnInit(): void {
-        this.login = new FormGroup({
-        'name': new FormControl("",[Validators.required]),
-        'psw': new FormControl("",[Validators.required,Validators.maxLength(10)])
-  });
- 
-  
+ngOnInit(): void {
+    this.login = new FormGroup({
+   'name': new FormControl("",[Validators.required]),
+   'psw': new FormControl("",[Validators.required,Validators.maxLength(10)]),
+    });
 }
     
-
-    getName():string{    
-        return this.login.get('name').value; 
-
-        }
-
-    getPassword():string{ 
-        return this.login.get('psw').value;
-        }
-
-    MoveHome(){
-        console.log(1);
-        this.router.navigate(['/home']);
-    }
-
-    MoveRegister(){
-        console.log(1);
-        this.router.navigate(['/register']);
-    }
-
-    CheckLogin(uname:string,psw:string){
-        /*if(uname==="user" && psw==="password")
-            this.MoveHome();
+ MoveRegister(){
+  
+    this.router.navigate(['/register']);
+ }
+ 
+ logForm(name,password){
         
-        */
-        this.api.doLogin(uname,psw).then(
+        let id;
+        this.api.getUserID(name).then(
             result=>{
                 console.log(result);
-            }
-        );
-    }
-
-    
-
-
-
-}
-
-
+                if(result != 2){
+                    this.api.doLogin(result).then(
+                       result=>{
+                          console.log(result);
+                          if(result != 2)
+                           if(result == password)
+                              this.router.navigate(['/home']);
+                          });              
+                }
+        });         
+   }
+ }
