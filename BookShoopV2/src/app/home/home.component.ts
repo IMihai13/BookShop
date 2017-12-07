@@ -20,6 +20,11 @@ export class HomeComponent implements OnInit {
   public title4 : any;
   public image4: any;
   public details4 :any;
+  public price1:any;
+  public price2:any;
+  public price3:any;
+  public price4:any;
+
 
   private cartBook:number=0;
   public static cartName:any[]=[];
@@ -41,9 +46,10 @@ export class HomeComponent implements OnInit {
             this.details1 = result;
         });
 
+
         this.api.getBookImage(13).then(
         result =>{
-          console.log("imagine                                  "           +result);
+          
             this.image1=result;        
         });
 
@@ -106,6 +112,30 @@ export class HomeComponent implements OnInit {
           console.log(result);
             this.details4 = " Description: " + result;
         });
+
+          this.api.getBookPrice(13).then(
+                result =>{
+                   this.price1 ="Price: " +result;
+              });
+
+
+          this.api.getBookPrice(14).then(
+                result =>{
+                   this.price2 ="Price: " +result;
+              });
+
+
+          this.api.getBookPrice(15).then(
+                result =>{
+                   this.price3 ="Price: " +result;
+              });
+
+
+          this.api.getBookPrice(16).then(
+                result =>{
+                   this.price4 ="Price: " +result;
+              });
+
   	}
 
   ngOnInit() {

@@ -24,6 +24,7 @@ table {
 	font-family:Times New Roman;
     width: 60%;
     margin-top: -70px;
+    align-items: left;
 
 }
 
@@ -38,9 +39,9 @@ td{
 	text-align:center;
 	padding-left: 70px;
 	padding-top:20px;
-     size: 19px;
-    color:black;
-    background-color: orange;
+    font-size:20px;
+    color: black;
+    background-color: #ffcc66;
     opacity: 0.8;
 }
 
@@ -49,4 +50,23 @@ td{
 th {
     background-color: #FF6600;
     color: white;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+
+}
+
+button{
+    background-color: #4CAF50; /* Green */ 
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }

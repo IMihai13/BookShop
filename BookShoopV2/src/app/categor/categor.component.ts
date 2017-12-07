@@ -19,6 +19,9 @@ private TitleM: Array<{}>= new Array();
 private DetailsM: Array<{}>= new Array();
 private TitleH: Array<{}>= new Array();
 private DetailsH: Array<{}>= new Array();
+private PriceA: Array<{}>=new Array();
+private PriceH: Array<{}>=new Array();
+private PriceM: Array<{}>=new Array();
 private list: String;
 private cartBook:any;
 
@@ -33,6 +36,9 @@ private cartBook:any;
       this.DetailsH[i] = "";
       this.TitleM[i] = "";
       this.DetailsM[i] = "";
+      this.PriceA[i] = "";
+      this.PriceH[i] = "";
+      this.PriceM[i] = "";
 
 }
 
@@ -49,6 +55,11 @@ private cartBook:any;
                 result =>{
                    this.DetailsA[0] = result;
               });
+
+              this.api.getBookPrice(String(result[0])).then(
+                result =>{
+                   this.PriceA[0] ="Price: " +result;
+              });
             }
 
               if(String(result[1]) != "undefined"){
@@ -60,6 +71,11 @@ private cartBook:any;
                this.api.getDescription(String(result[1])).then(
                 result =>{
                    this.DetailsA[1] = result;
+              });
+
+              this.api.getBookPrice(String(result[1])).then(
+                result =>{
+                   this.PriceA[1] ="Price: " +result;
               });
             }
 
@@ -73,6 +89,11 @@ private cartBook:any;
                 result =>{
                    this.DetailsA[2] = result;
               });
+              
+              this.api.getBookPrice(String(result[2])).then(
+                result =>{
+                   this.PriceA[2] ="Price: " +result;
+              });
             }
 
               if(String(result[3]) != "undefined"){
@@ -85,6 +106,10 @@ private cartBook:any;
                 result =>{
                    this.DetailsA[3] = result;
               });
+              this.api.getBookPrice(String(result[3])).then(
+                result =>{
+                   this.PriceA[3] ="Price: " +result;
+              });
             }
 
               if(String(result[4]) != "undefined"){
@@ -96,6 +121,10 @@ private cartBook:any;
                this.api.getDescription(String(result[4])).then(
                 result =>{
                    this.DetailsA[4] = result;
+              });
+              this.api.getBookPrice(String(result[4])).then(
+                result =>{
+                   this.PriceA[4] ="Price: " +result;
               });
             }
       });
@@ -111,9 +140,12 @@ private cartBook:any;
               });
                this.api.getDescription(String(result[0])).then(
                 result =>{
-                console.log("fkwejhfwkej   "+result);
                    this.DetailsH[0] = result;
 
+              });
+               this.api.getBookPrice(String(result[0])).then(
+                result =>{
+                   this.PriceH[0] ="Price: " +result;
               });
             }
 
@@ -128,6 +160,10 @@ private cartBook:any;
 
                    this.DetailsH[1] = result;
               });
+               this.api.getBookPrice(String(result[1])).then(
+                result =>{
+                   this.PriceH[1] ="Price: " +result;
+              });
             }
 
               if(String(result[2]) != "undefined"){
@@ -139,6 +175,11 @@ private cartBook:any;
                this.api.getDescription(String(result[2])).then(
                 result =>{
                    this.DetailsH[2] = result;
+              });
+
+               this.api.getBookPrice(String(result[2])).then(
+                result =>{
+                   this.PriceH[2] ="Price: " +result;
               });
             }
 
@@ -152,6 +193,11 @@ private cartBook:any;
                 result =>{
                    this.DetailsH[3] = result;
               });
+
+               this.api.getBookPrice(String(result[3])).then(
+                result =>{
+                   this.PriceH[3] ="Price: " +result;
+              });
             }
 
               if(String(result[4]) != "undefined"){
@@ -163,6 +209,11 @@ private cartBook:any;
                this.api.getDescription(String(result[4])).then(
                 result =>{
                    this.DetailsH[4] = result;
+              });
+
+               this.api.getBookPrice(String(result[4])).then(
+                result =>{
+                   this.PriceH[4] ="Price: " +result;
               });
             }});
 
@@ -178,6 +229,12 @@ private cartBook:any;
                 result =>{
                    this.DetailsM[0] = result;
               });
+
+
+               this.api.getBookPrice(String(result[0])).then(
+                result =>{
+                   this.PriceM[0] ="Price: " +result;
+              });
             }
 
               if(String(result[1]) != "undefined"){
@@ -189,6 +246,11 @@ private cartBook:any;
                this.api.getDescription(String(result[1])).then(
                 result =>{
                    this.DetailsM[1] = result;
+              });
+
+               this.api.getBookPrice(String(result[1])).then(
+                result =>{
+                   this.PriceM[1] ="Price: " +result;
               });
             }
 
@@ -202,6 +264,12 @@ private cartBook:any;
                 result =>{
                    this.DetailsM[2] = result;
               });
+
+
+               this.api.getBookPrice(String(result[2])).then(
+                result =>{
+                   this.PriceM[2] ="Price: " +result;
+              });
             }
 
               if(String(result[3]) != "undefined"){
@@ -214,6 +282,11 @@ private cartBook:any;
                 result =>{
                    this.DetailsM[3] = result;
               });
+
+               this.api.getBookPrice(String(result[3])).then(
+                result =>{
+                   this.PriceM[3] ="Price: " +result;
+              });
             }
 
               if(String(result[4]) != "undefined"){
@@ -225,6 +298,11 @@ private cartBook:any;
                this.api.getDescription(String(result[4])).then(
                 result =>{
                    this.DetailsM[4] = result;
+              });
+
+               this.api.getBookPrice(String(result[4])).then(
+                result =>{
+                   this.PriceM[4] ="Price: " +result;
               });
             }
             });
