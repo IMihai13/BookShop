@@ -19,6 +19,13 @@ export class AddBooksComponent implements OnInit {
 
  
   addBooks(title,idt,author,editure,image,description,price){
+          if(idt == "Adventure")
+            idt = 1;
+          if(idt == "History")
+            idt = 2;
+          if(idt == "Mistery")
+            idt = 3;
+        
   		this.api.addBook(idt,title,author,editure,image,price,description).then(
             result=>{
                 console.log(result);

@@ -1,11 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-interface UserResponse {
-  login: string;
-  bio: string;
-  company: string;
-}
+
 
 @Component({
   selector: 'app-root',
