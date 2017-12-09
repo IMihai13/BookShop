@@ -16,8 +16,9 @@ import { LogoutComponent } from './logout/logout.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { RegisterComponent } from './register/register.component';
-import { ViewerComponent } from './viewer/viewer.component';
 import { ApiProviderService } from './api-provider.service';
+import { AddBooksComponent} from './add-books/add-books.component';
+import { EditBookComponent } from './edit-book/edit-book.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ApiProviderService } from './api-provider.service';
     LoginComponent,
     CartComponent,
     RegisterComponent,
-    ViewerComponent,
+    AddBooksComponent,
+    EditBookComponent,
     
   ],
   imports: [

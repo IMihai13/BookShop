@@ -1,0 +1,83 @@
+<html>
+  <body>
+
+  <!-- Form Name -->
+  <form class="form-horizontal">
+  <h2> Add new Book</h2>
+
+  <!-- Text input-->
+  <div class="form-group" style="margin-top: 50px; font-color:black">
+    <label class="col-md-4 control-label" for="title"> Title:</label>  
+    <div class="col-md-4">
+    <input id="title" name="title" type="text" placeholder={{titl}} class="form-control input-md" required maxlength="50" [(ngModel)]="title">
+      
+    </div>
+  </div>
+
+    <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="idt">Book Type:</label>  
+    <div class="col-md-4">
+    <input id="idt" name="idt" type="text" placeholder={{typ}} class="form-control input-md" required maxlength="50" [(ngModel)]="idt" >
+      
+    </div>
+  </div>
+
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="author">Author:</label>  
+    <div class="col-md-4">
+    <input id="author" name="author" type="text" placeholder={{author}} class="form-control input-md" required maxlength="50" [(ngModel)]="author">
+      
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="user">Editure:</label>  
+    <div class="col-md-4">
+    <input id="editure" name="editure" type="text" placeholder={{editure}} class="form-control input-md" required maxlength="50" [(ngModel)]="editure">
+      
+    </div>
+  </div>
+
+  <!-- Password input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="password" >Image URL:</label>
+    <div class="col-md-4" maxlength="100">
+      <input id="image" name="image" type="long"  placeholder={{image}} class="form-control input-md" required maxlength="1000" [(ngModel)]="image">
+      
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="contact">Description:</label>  
+    <div class="col-md-4">
+    <input id="description" name="description" type="text" placeholder={{description}} class="form-control input-md" required maxlength="1000" [(ngModel)]="description">
+      
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="adress">Price:</label>  
+    <div class="col-md-4">
+    <input id="price" name="price" type="text" placeholder={{price}} class="form-control input-md" required maxlength="10" [(ngModel)]="price">
+      
+    </div>
+  </div>
+
+  
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" ></label>
+    <div class="col-md-4">
+     <button id="add" name="add" class="btn btn-success"  (click)= "editBooks(author,editure,image,description,price)">Save</button>
+     
+    </div>
+  </div>
+</form>
+</body>
+</html>

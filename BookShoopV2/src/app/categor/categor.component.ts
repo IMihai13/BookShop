@@ -3,6 +3,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import {HomeComponent} from '../home/home.component';
 import { ApiProviderService } from '../api-provider.service';
 
+import { EditBookComponent } from '../edit-book/edit-book.component';
+
 @Component({
   selector: 'app-categor',
   templateUrl: './categor.component.html',
@@ -26,7 +28,7 @@ private list: String;
 private cartBook:any;
 
   constructor(private router : Router,private api : ApiProviderService) {
-  	for(let i = 0;i < 5;i++){
+    for(let i = 0;i < 5;i++){
   		this.Adv[i]=true;
   		this.His[i]=true;
   		this.Mis[i]=true;
@@ -330,6 +332,18 @@ private cartBook:any;
 
   });  
 
+  }
+
+  GOaddBook(){
+   this.router.navigate(['/adder']);
+  
+  }
+
+  edit(t:string){
+    EditBookComponent.title = t;
+    console.log(t);
+    console.log(EditBookComponent.title);
+    this.router.navigate(['/editer']);
   }
 
   ngOnInit() {

@@ -9,7 +9,8 @@ import { CategorComponent } from './categor/categor.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { RegisterComponent } from './register/register.component';
-import { ViewerComponent } from './viewer/viewer.component';
+import { AddBooksComponent } from './add-books/add-books.component';
+import { EditBookComponent } from './edit-book/edit-book.component';
 
 export const router: Routes = [
 	
@@ -26,8 +27,10 @@ export const router: Routes = [
 	{path:'categor',component:CategorComponent},
 	
 	{path:'register',component:RegisterComponent},
-
-	{path:'viewer',component:ViewerComponent},
+	
+	{path:'adder',component:AddBooksComponent},
+	
+	{path:'editer',component:EditBookComponent},
 	
 	{path:'**',component:LoginComponent},
 
