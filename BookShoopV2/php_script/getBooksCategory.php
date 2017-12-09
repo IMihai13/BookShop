@@ -1,7 +1,5 @@
 <?php
-$id=2;//let body= 'key&id' + 2; 
-$field='Id_tip';
-$fieldd='Id_book';
+$id=$_GET['id'];
 
 $localost = 'localhost';
 $user = 'root';
@@ -10,10 +8,10 @@ $database = 'bookshop';
 $con=mysqli_connect("$localost","$user","$password","$database");
 $lst=array();
 $k=0;
-$sql="SELECT $fieldd FROM books WHERE $field=$id";
+$sql="SELECT Id_book FROM books WHERE Id_tip=$id";
 $result=mysqli_query($con, $sql);
 if(!$result)
-    echo err;
+    echo json_encode('err');
     
 while ($row=mysqli_fetch_array($result))
 {

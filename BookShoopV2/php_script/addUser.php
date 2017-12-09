@@ -1,12 +1,12 @@
 <?php
 
-$usern='user2';//
-$pass='password3';//
-$name='name2';//
-$pname='pname2';//
-$adress='adress2';//
-$phone='0101010101';//
-$email='anymail@s.com';//
+$usern=$_GET['user'];
+$pass=$_GET['pass'];
+$name=$_GET['name'];
+$pname=$_GET['pname'];
+$adress=$_GET['adress'];
+$phone=$_GET['phone'];
+$email=$_GET['email'];
 
 $localost = 'localhost';
 $user = 'root';
@@ -17,6 +17,9 @@ $con=mysqli_connect("$localost","$user","$password","$database");
 $sql="insert into users (UserName,Password,Name,PName,Adress,Phone,Email,Admin) values 
 ('$usern','$pass','$name','$pname','$adress','$phone','$email',false)";
 $query=mysqli_query($con , $sql);
-
+if(!$query)
+    echo json_encode('false');
+else
+    echo json_encode('true');
 
 ?>

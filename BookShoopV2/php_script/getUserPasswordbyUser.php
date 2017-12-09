@@ -1,5 +1,7 @@
 <?php
-$id=$_GET['id'];
+$usern='userdg';//
+$field='UserName';
+$fieldd='Password';
 
 $localost = 'localhost';
 $user = 'root';
@@ -7,10 +9,10 @@ $password = 'pw~2017!!';
 $database = 'bookshop';
 $con=mysqli_connect("$localost","$user","$password","$database");
 
-$sql="SELECT Name FROM books WHERE Id_book='$id'";
+$sql="SELECT $fieldd FROM users WHERE $field='$usern'";
 $query=mysqli_query($con, $sql);
 if($row=mysqli_fetch_array($query))
-    echo json_encode($row['Name']);
+    echo $row[$fieldd];
 else 
-    echo json_encode('2');
+    echo JSON_ERROR_INVALID_PROPERTY_NAME;
 ?>

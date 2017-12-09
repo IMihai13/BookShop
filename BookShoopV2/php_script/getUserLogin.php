@@ -1,24 +1,20 @@
 <?php
-$usern=_REQUEST[username];
-$usern=_REQUEST[password];
-$field='UserName';
-$fieldd='Password';
-$fieldd1='Id_user';
+$id=$_GET['id'];
 
 $localost = 'localhost';
 $user = 'root';
 $password = 'pw~2017!!';
 $database = 'bookshop';
 $con=mysqli_connect("$localost","$user","$password","$database");
+if(!$con){
+    echo json_encode('10');
+}
 
-$sql="SELECT $fieldd,$fieldd1 FROM users WHERE $field='$usern'";
+$sql="SELECT Password  FROM users WHERE Id_user='$id'";
 $query=mysqli_query($con, $sql);
 if($row=mysqli_fetch_array($query)){
-    if($row[$fieldd].equals($pass)
-		echo row[$fieldd1];
-	else
-		echo -1;  	
+		echo json_encode($row['Password']);  	
 }
 else 
-    echo -2;
+    echo json_encode('2');
 ?>
