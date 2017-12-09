@@ -173,4 +173,19 @@ export class ApiProviderService {
         });
     }); 
     }
+
+    updateBook(idb,idt,title,author,editure,image,price,description){
+       
+        let body:string="key=create",
+        type:string="application/x-www-form-urlencoded; chart=UTF-8",
+        headers:any=new Headers({'Contet-Type': type }),
+        options:any=new RequestOptions({headers:headers}),
+        url:any ='http://localhost/php_script/updateBook.php?idb='+idb+'&tip='+idt+'&name='+title+'&autor='+author+'&ed='+editure+'&img='+image+'&price='+price+'&desc='+description;
+
+    return new Promise(resolve=>{
+    this.http.post(url,body,options).subscribe((data)=>{
+            resolve(data.json());
+        });
+    }); 
+    }
 }  
